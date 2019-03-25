@@ -4,18 +4,18 @@
     <title>Front-End Web Development</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <h2>Currency Converter</h2> 
     </header>
-    <form>
+    <form class="controls">
       <div class="field">
         <div class="field-label">
           <label>Base</label>
         </div>
-        <div class="field-iput">
+        <div class="field-input">
           <Select>
           <option value="EUR">EUR</option>
           <option value="USD">USD</option>
@@ -26,7 +26,7 @@
         <div class="field-label">
           <label for="sum">Sum</label>
         </div>
-        <div class="field-iput">
+        <div class="field-input">
           <input type="number" id="sum" name="sum" value="1" step="0.01" min="0.01"/>
         </div>
         <div id="currency-indicator">&euro;</div>
@@ -37,8 +37,8 @@
     </form>
     <div id="isLoading">Loading...</div>
     <ul id="currency-list">
-      <li>item1</li>
-      <li>item2</li>
+      <li><div>EUR</div><div>1000</div></li>
+      <li><div>USD</div><div>1000</div></li>
     </ul>
     <script type="text/javascript" src="/bundle.js"></script>
   </body>
